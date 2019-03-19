@@ -1,0 +1,14 @@
+[package]
+name = "sigils_of_elohim_solver"
+version = "0.1.0"
+authors = ["Michael Wright <mikerite@lavabit.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+clap = "2"
+image = "0.21.0"
+
+[[bin]]
+name = "soe_solver"
+path = "src/main.rs"
