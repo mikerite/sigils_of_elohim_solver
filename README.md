@@ -1,10 +1,10 @@
 # Sigils of Elohim Solver
 
 A console application that solves tetromino tiling puzzles from the game
-(Sigils of Elohim)[1].
+[Sigils of Elohim][1].
 
 ```
-$soe_solver 4 4 LLZZ --pretty
+$ soe_solver 4 4 LLZZ --pretty
 ┌─────┬─┐
 │ ┌─┬─┘ │
 ├─┘ │ ┌─┤
@@ -14,7 +14,7 @@ $soe_solver 4 4 LLZZ --pretty
 
 ## Algorithm
 
-The program uses a simple back tracking algorithm. It tries to fill the
+The program uses a simple backtracking algorithm. It tries to fill the
 top-left most open square any of the remaining tetrominoes. If none fit, it
 back tracks to the previous tetromino and resumes the search there with the
 next available tetromino. The program uses bitboards in its representation
@@ -35,4 +35,4 @@ Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any
 additional terms or conditions.
 
-[1](https://store.steampowered.com/app/321480/Sigils_of_Elohim/)
+[1]: https://store.steampowered.com/app/321480/Sigils_of_Elohim/
