@@ -61,15 +61,16 @@ fn main() {
         exit_with_error(err);
     });
     let pretty = matches.is_present("pretty");
-    let display = solution
-        .map(|s| {
+    let display = solution.map_or_else(
+        || "No solution".into(),
+        |s| {
             if pretty {
                 format!("{:#}", s)
             } else {
                 format!("{}", s)
             }
-        })
-        .unwrap_or_else(|| "No solution".into());
+        },
+    );
 
     println!("{}", display);
 }
